@@ -24,3 +24,18 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+ion-content {
+    --background: url(/assets/img/Puente-alto.jpg) no-repeat center/cover fixed;
+  }
+
+  ion-toolbar{
+    box-shadow: none !important;
+    text-align: center;
+    font-weight: 200;
+    color: #012c56;
+    font-family: 'Pacifico', cursive;
+    --background: url(/assets/img/banner.png) no-repeat center/cover fixed;
+  }
+

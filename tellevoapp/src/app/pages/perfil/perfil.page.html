@@ -1,0 +1,30 @@
+<ion-content>
+  <div class="card">
+    <div class="header">
+      <div class="avatar">
+        <ion-avatar class="avatar">
+          <ion-img class="pic" src="assets/img/EgAI3HLXsAAsWVb.jpg"></ion-img>
+        </ion-avatar>
+      </div>
+    </div>
+  </div>
+  <ion-card class="card-body" *ngIf="info">
+      <ion-label class="misDatos">Mis datos</ion-label>
+      <br>
+      <ion-label class="playername">Nombre: {{info.nombre}} {{info.p_apellido}}</ion-label>
+      <br>
+      <ion-label class="country">Correo: {{info.correo}} </ion-label>
+      <br>
+      <ion-label class="country">Perfil: {{info.perfil}} </ion-label>
+      <br>
+      <ion-label class="country">Sede: {{info.sede}} </ion-label>
+      <br>
+      <ion-label class="country">Fecha de nacimiento: {{info.fnac}} </ion-label>
+      <br>
+  </ion-card>
+  <div class="sign-btn-wrap">
+    <ion-button size="small" expand="full" shape="round" fill="solid" color="primary">Nuestro Facebook</ion-button>
+    <ion-button size="small" expand="full" shape="round" fill="solid" color="secondary">Duoc web</ion-button>
+    <ion-button size="small" expand="full" (click)="logout()" shape="round" fill="solid" class="sign-btn">Cerrar sesión</ion-button>
+  </div>
+</ion-content>
